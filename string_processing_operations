@@ -1,0 +1,11 @@
+from collections import Counter
+import string
+og = "Apple have Apple color"
+rep = og.replace("Apple", "Orange")
+print("Original text: ", og)
+print("Replaced text: ", rep)
+ch_c = Counter(og.lower())
+words = og.split()
+w_c = Counter(words)
+print("Word Frequency: ", dict(w_c))
+print("Character Frequency: ", dict(ch_c))
